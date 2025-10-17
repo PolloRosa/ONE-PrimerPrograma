@@ -11,21 +11,18 @@ public class PrimeraClase {
 
         System.out.println(media);
 
-        // ejercicio sobre operadores de incremento
-        // Operador de pre-incremento
-        // primero aumenta el valor, después la utiliza en la expresión
-        int puntos = 10;
-        int puntosVip = ++puntos;
-        System.out.println("Los puntos son " + puntos + " y para VIP son " + puntosVip);
-        // Operador de post-incremento
-        // utiliza la variable en la expresión, después aumenta su valor
-        puntosVip = puntos++;
-        System.out.println("Los puntos son " + puntos + " y para VIP son " + puntosVip);
-
-        if(puntosVip == puntos++) {
-            System.out.println("Primero comprueba la condición, después incrementa a "+ puntos + ".");
-        } else {
-            System.out.println("Primero incrementa a " + puntos + ", después comprueba la condición.");
-        }
+        // Convenciones de código
+        /* La convención de código de Java es un conjunto de reglas recomendadas
+        * para escribir código Java que sea fácil de leer, entender y mantener.
+        * Estas reglas han sido definidas por Oracle, la empresa que mantiene el
+        * lenguaje Java, y son ampliamente seguidas por la comunidad de
+        * desarrolladores de Java. */
+        System.out.println("Los nombres de clases deben seguir la convención Upper CamelCase, ejemplo: " +
+                PrimeraClase.class.getSimpleName());
+        System.out.println("Los nombres de métodos deben seguir la convención camelCase, ejemplo: obtenerPromedio()");
+        System.out.println("Los nombres de constantes deben estar en mayúsculas separadas por guiones bajos," +
+                " ejemplo: CAPACIDAD_MAXIMA_ESTUDIANTES");
+        System.out.println("Los nombres de variables deben seguir la convención camelCase, ejemplo: " +
+                "fechaDeLanzamiento");
     }
 }
