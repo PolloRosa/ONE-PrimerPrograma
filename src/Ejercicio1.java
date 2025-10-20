@@ -1,4 +1,4 @@
-public class Ejercicio {
+public class Ejercicio1 {
     public static void main(String[] args) {
         double temperaturaCelsius = 25.5;
         double temperaturaFahrenheit = (temperaturaCelsius * 1.8) + 32;
