@@ -13,7 +13,7 @@ public class Ejercicio2 {
         final String MENSAJE_MAYOR = "No es el número secreto: es mayor.";
         final String MENSAJE_MENOR = "No es el número secreto: es menor.";
         final String MENSAJE_FRACASO = "No es el número secreto y fue el último intento.";
-        int intento = 1, respuesta = 0;
+        int intento = 1, respuesta;
         Scanner teclado = new Scanner(System.in);
         String mensaje;
 
@@ -44,9 +44,7 @@ public class Ejercicio2 {
                 }
             } catch (InputMismatchException e) {
                 System.out.println(MENSAJE_ERROR);
-                intento++;
                 teclado.nextLine();
-                continue;
             }
             intento++;
         }
