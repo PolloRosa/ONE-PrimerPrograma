@@ -48,5 +48,6 @@ public class Ejercicio2 {
             }
             intento++;
         }
+        teclado.close();
     }
 }
