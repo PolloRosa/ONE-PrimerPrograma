@@ -65,6 +65,9 @@ public class Bancaria {
                         input.nextLine();
                     }
                     break;
+                default:
+                    System.out.println("Opción no válida.");
+                    break;
             }
         } while(!respuesta.equals("9"));
 
