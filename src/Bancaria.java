@@ -32,12 +32,18 @@ public class Bancaria {
                     System.out.println("¿Cuál es el valor que deseas retirar?");
                     try {
                         double retiro = input.nextDouble();
+                        // fix porque el método nextLine() lee un salto de línea después de usar un nextInt o nextDouble
+                        input.nextLine();
+                        if(retiro <= 0) {
+                            System.out.println("Retiro inválido");
+                            break;
+                        }
                         if(saldo >= retiro) {
                             saldo -= retiro;
                             System.out.printf("El saldo actualizado es: %.2f %s%n", saldo, MONEDA);
                         } else System.out.println("Saldo insuficiente.");
                     } catch (InputMismatchException e) {
-                        System.out.println("Retiro inválido");
+                        System.out.println("Retiro inválido.");
                         input.nextLine();
                     }
                     break;
@@ -45,12 +51,14 @@ public class Bancaria {
                     System.out.println("¿Cuál es el valor que vas a depositar?");
                     try {
                         double deposito = input.nextDouble();
+                        // fix porque el método nextLine() lee un salto de línea después de usar un nextInt o nextDouble
+                        input.nextLine();
                         if(deposito > 0) {
                             saldo += deposito;
                             System.out.printf("El saldo actualizado es: %.2f %s%n", saldo, MONEDA);
                         } else System.out.println("Depósito inválido.");
                     } catch (InputMismatchException e) {
-                        System.out.println("Depósito inválido");
+                        System.out.println("Depósito inválido.");
                         input.nextLine();
                     }
                     break;
