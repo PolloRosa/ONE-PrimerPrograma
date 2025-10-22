@@ -1,6 +1,6 @@
 # ONE: PrimerPrograma
 
-![Versión: en desarrollo](https://img.shields.io/badge/VERSIÓN-Desarrollo-blue) ![Fecha de lanzamiento: OCTUBRE 2025](https://img.shields.io/badge/Fecha_de_lanzamiento-OCTUBRE_2025-blue)
+![Versión: 1.3.0](https://img.shields.io/badge/VERSIÓN-1.3.0-blue) ![Fecha de lanzamiento: OCTUBRE 2025](https://img.shields.io/badge/Fecha_de_lanzamiento-21/10/2025-blue)
 
 ![Java](https://img.shields.io/badge/Java-b07219)
 
@@ -10,19 +10,19 @@ El programa [Oracle Next Education (ONE)](https://www.oracle.com/latam/education
 
 Es un programa gratuito que dura 12 meses. Abre inscripciones 2 veces al año donde las personas pueden postular mediante un formulario. Cada generación es enumerada con números arábigos.
 
-El proyecto PrimerPrograma es uno de los proyectos en Java del programa ONE de Oracle y Alura Latam del grupo G9 que inició en julio 2025. Es el proyecto donde se desarrollan los ejercicios del primer curso *Java: creando tu primera aplicación* de la primera formación *Java Orientado a Objetos G9 - ONE* de la especialización de Back-end.
+El proyecto PrimerPrograma es el primero de los proyectos en Java del programa ONE de Oracle y Alura Latam del grupo G9 que inició en julio 2025. Es el proyecto donde se desarrollan los ejercicios del primer curso *Java: creando tu primera aplicación* de la primera formación *Java Orientado a Objetos G9 - ONE* de la especialización de Back-end.
 
-En esta primera fase de la 3era etapa del programa ONE, las clases han cubierto lo básico sobre la programación en Java: comentarios, estructuras condicionales e iterativas, operaciones aritméticos, relacionales, lógicos y auto-incrementales, uso de variables, tipos de datos, Casting, convenciones de nombres, imprimir texto en consola y obtención de datos con la clase Scanner, la clase String, bloques de texto y formato de textos.
+En esta primera parte de la tercera etapa del programa ONE, las clases han cubierto lo básico sobre la programación en Java: comentarios, estructuras condicionales e iterativas, operaciones aritméticos, relacionales, lógicos y auto-incrementales, uso de variables, tipos de datos, Casting, convenciones de nombres, imprimir texto en consola y obtención de datos con la clase Scanner, la clase String, bloques de texto y formato de textos.
 
 ## Descripción del proyecto
 
-PrimerPrograma es una compilación de ejercicios para aplicar lo cubierto en el curso. La mayoría son simples y básicos, pero te invito a revisar la clase Ejercicio2 donde está el *Desafío: juego de adivinación*.
+PrimerPrograma es una compilación de ejercicios para aplicar lo cubierto en el curso. La mayoría son simples y básicos, pero te invito a revisar la clase Ejercicio2 donde está el *Desafío: juego de adivinación* y la clase Bancaria donde está el *Desafío: aplicación bancaria*.
 
 ## Estado del proyecto
 
-El proyecto aún se encuentra en desarrollo, quedando pendiente la finalización de la última clase del curso para alcanzar la versión 1.0.
+El día 21 de octubre del 2025 se lanzó la versión 1.0.0 del proyecto, con la versión operativa del desafío Aplicación Bancaria en la clase Bancaria.
 
-El proyecto se encuentra en su [versión 0.4.3](#registro-de-cambios).
+El proyecto actualmente se encuentra en su [versión 1.3.0](#registro-de-cambios).
 
 ## Demostración de funcionalidad
 
@@ -48,6 +48,12 @@ El usuario tiene 5 intentos para adivinar un número secreto generado al azar po
 
 ![Gif de la funcionalidad en Ejercicio2](funcionalidad4.gif)
 
+La clase Bancaria contiene el desarrollo del *Desafío: aplicativo bancario* donde se aplican todos los temas cubiertos en el curso, a pesar de que el curso ofrece acompañamiento para la programación del desafío, se optó por desarrollarlo primero y revisar el material de apoyo después, incluyéndose en el proyecto solo 2 consejos: usar un bloque de texto para el menú y agregar el bloque default en el switch para opciones no válidas.
+
+El programa simula ser un cajero de banco, donde el cliente tiene un nombre, tipo de cuenta y saldo. El programa ofrece 4 opciones: 1 - Consultar saldo, 2 - Retirar, 3 - Depositar y 9 - Salir, donde las opciones de retiro y depósito afectan el saldo disponible, deben solicitar un monto válido mayor a cero y menor al saldo para el caso del retiro, y deben mostrar el saldo actualizado así como los mensajes de error. El menú se seguirá mostrando hasta que el cliente ingrese la opción 9 - Salir.   
+
+![Gif de la funcionalidad en Bancaria](funcionalidad5.gif)
+
 ## Instalación local
 
 1. Clona el código fuente del repositorio.
@@ -67,6 +73,22 @@ git clone https://github.com/PolloRosa/ONE-PrimerPrograma.git
 * Git para control de versiones
 
 ## Registro de cambios
+
+1.3.0 *22 octubre 2025*
+
+* :sparkles: Agrega bloque default en el switch para el ingreso de opciones no válidas en la clase Bancaria.
+
+1.2.0 *22 octubre 2025*
+
+* :pencil2: Corrige el menú para usar bloque de texto en una variable en la clase Bancaria.
+
+1.1.0 *22 octubre 2025*
+
+* :pencil2: Corrige bug que no permite el ingreso de la opción mediante ingreso por teclado después de hacer un retiro o depósito en la clase Bancaria.
+
+1.0.0 *21 octubre 2025*
+
+* :sparkles: Agrega desafío de Aplicación Bancaria en la clase Bancaria, versión testeada y operativa.
 
 0.4.3 *20 octubre 2025*
 
