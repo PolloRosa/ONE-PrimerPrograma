@@ -7,7 +7,7 @@ public class Bancaria {
         String tipoCuenta = "Corriente";
         double saldo = 200;
         final String MONEDA = "PEN";
-        String respuesta;
+        String respuesta, menu;
         Scanner input = new Scanner(System.in);
 
         System.out.println("*****************************************\n");
@@ -16,12 +16,15 @@ public class Bancaria {
         System.out.printf("Saldo disponible: %.2f %s", saldo, MONEDA);
         System.out.println("\n\n*****************************************");
 
+        menu = """
+                ** Escriba el número de la opción deseada **
+                1 - Consultar saldo
+                2 - Retirar
+                3 - Depositar
+                9 - Salir
+                """;
         do {
-            System.out.println("** Escriba el número de la opción deseada **");
-            System.out.println("1 - Consultar saldo");
-            System.out.println("2 - Retirar");
-            System.out.println("3 - Depositar");
-            System.out.println("9 - Salir\n");
+            System.out.println(menu);
             respuesta = input.nextLine();
 
             switch(respuesta) {
